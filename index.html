@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <style>
-        html,
-        body {
+        html, body {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -15,20 +14,25 @@
             background: #ffffff;
         }
 
-        body {
-            position: fixed;
-            inset: 0;
+        .imagem-login {
+            position: absolute;
+            top: 50%;
+            left: 50%;
 
-            background-image: url('1.png');
-            background-repeat: no-repeat;
-            background-position: center center;
+            width: 103%;
+            height: 103%;
 
-            /* IMPORTANTE */
-            background-size: cover;
+            transform: translate(-50%, -50%);
+
+            object-fit: cover;
+            object-position: center center;
+
+            display: block;
         }
     </style>
 </head>
 
 <body>
+    <img src="1.png" class="imagem-login" alt="">
 </body>
 </html>
